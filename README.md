@@ -1,9 +1,6 @@
 # MTFloatingView
 
 <p align="center">
-	<a href="https://cocoapods.org/pods/Licenses">
-		<img src="https://img.shields.io/cocoapods/p/AppsPortfolio.svg?style=flat" alt="CocoaPods" />
-	</a>
 	<a href="https://swift.org/package-manager">
 		<img src="https://img.shields.io/badge/spm-compatible-brightgreen.svg?style=flat" alt="Swift Package Manager" />
 	</a>
