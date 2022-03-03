@@ -6,7 +6,17 @@ final class MTFloatingViewTests: XCTestCase {
         // This is an example of a functional test case.
         // Use XCTAssert and related functions to verify your tests produce the correct
         // results.
-        XCTAssertEqual(MTFloatingView().text, "Hello, World!")
+		#if os(iOS)
+			let floatingView: MTFloatingView.MTFloatyView? = MTFloatingView.MTFloatyView()
+			if floatingView == nil {
+				XCTFail()
+			}
+			else {
+				XCTestExpectation(description: "floating view created").fulfill()
+			}
+		#else
+		XCTFail("Library supports only iOS")
+		#endif
     }
 
     static var allTests = [
